@@ -3,7 +3,7 @@ import sbt._
 object Version {
   val foundation = "6.3.1"
   val prettify   = "4-Mar-2013-1"
-  val sbtParadox = "0.3.0"
+  val sbtParadox = "0.3.2"
 }
 
 object Library {
