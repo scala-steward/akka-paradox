@@ -2,6 +2,8 @@
 
 This plugin extends the Paradox sbt plugin with some default settings and sets the Akka Paradox theme.
 
+It is intended as a shared doc theme for the Akka umbrella of projects, and not as a public theme to use on "any" project.
+
 ## Usage
 
 Use the sbt plugin for Akka Paradox:
