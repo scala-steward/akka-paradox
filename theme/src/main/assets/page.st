@@ -25,6 +25,12 @@ $endif$
 <meta name="msapplication-TileColor" content="#15a9ce">
 <meta name="theme-color" content="#15a9ce">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- OneTrust Cookies Consent Notice (Production Standard, akka.io, en-GB) start -->
+<script src="https://optanon.blob.core.windows.net/consent/159bb13d-6748-4399-806e-ac28db879785.js" type="text/javascript" charset="UTF-8"></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+<!-- OneTrust Cookies Consent Notice (Production Standard, akka.io, en-GB) end -->
 $analytics()$
 </head>
 
@@ -116,8 +122,15 @@ $source()$
 <footer class="page-footer row clearfix">
 <img class="akka-icon float-left show-for-medium" src="$page.base$images/akka-icon.svg">
 <section class="copyright">
-<div>&copy; 2011-$page.properties.("date.year")$ <a href="https://www.lightbend.com">Lightbend</a></div>
 <div>$page.properties.("project.name")$ is Open Source and available under the Apache 2 License.</div>
+<p class="legal">
+    &copy; 2011-$page.properties.("date.year")$ <a href="https://www.lightbend.com" target="_blank">Lightbend, Inc.</a> | 
+    <a href="https://www.lightbend.com/legal/licenses" target="_blank">Licenses</a> | 
+    <a href="https://www.lightbend.com/legal/terms" target="_blank">Terms</a> | 
+    <a href="https://www.lightbend.com/legal/privacy" target="_blank">Privacy Policy</a> | 
+    <a href="https://akka.io/cookie/" target="_blank">Cookie Listing</a> | 
+    <a class="optanon-toggle-display">Cookie Settings</a>
+  </p>
 </section>
 </footer>
 

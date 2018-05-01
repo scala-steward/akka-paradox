@@ -1,5 +1,5 @@
 <!--Google Analytics-->
-<script type="text/javascript">
+<script type="text/plain" class="optanon-category-2">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', '$page.properties.("google.analytics.account")$']);
   _gaq.push(['_setDomainName', '$page.properties.("google.analytics.domain.name")$']);
@@ -9,9 +9,7 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })()
-</script>
-<!--Google Analytics & Marketo-->
-<script type="text/javascript">
+
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -20,12 +18,15 @@
   ga('tsTracker.require', 'linker');
   ga('tsTracker.linker:autoLink', ['lightbend.com','playframework.com','scala-lang.org','scaladays.org','spray.io','akka.io','scala-sbt.org','scala-ide.org']);
   ga('tsTracker.send', 'pageview');
+</script>
+<!--Marketo-->
+<script type="text/plain" class="optanon-category-3">
   (function() {
       var didInit = false;
       function initMunchkin() {
       if(didInit === false) {
         didInit = true;
-        Munchkin.init('558-NCX-702');
+        Munchkin.init('558-NCX-702', { 'asyncOnly': true, 'disableClickDelay': true });
       }
       }
       var s = document.createElement('script');
