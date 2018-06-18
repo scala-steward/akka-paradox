@@ -149,6 +149,7 @@ $source()$
 <script type="text/javascript">jQuery(function(){window.prettyPrint && prettyPrint()});</script>
 
 $search()$
+$projectSpecificFooter()$
 
 </body>
 </html>
