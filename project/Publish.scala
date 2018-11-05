@@ -19,15 +19,3 @@ object Publish extends AutoPlugin {
   )
 
 }
-
-object NoPublish extends AutoPlugin {
-
-  override def requires = Publish
-
-  override def projectSettings = Seq(
-    publish := (),
-    publishLocal := (),
-    publishM2 := ()
-  )
-
-}
