@@ -4,8 +4,7 @@ jdk:
   - oraclejdk8
 
 script:
-  - sbt -J-XX:ReservedCodeCacheSize=128m ";^test:compile"
-  - git diff --exit-code --color || { echo "[error] Unformatted code found. Please run 'test:compile' and commit the reformatted code."; false; } && sbt -J-XX:ReservedCodeCacheSize=128m ++$TRAVIS_SCALA_VERSION ";test"
+  - sbt test
 
 before_cache:
   - find $HOME/.ivy2 -name "ivydata-*.properties" -print -delete
@@ -19,7 +18,7 @@ cache:
 deploy:
   provider: script
   script:
-    - sbt -J-XX:ReservedCodeCacheSize=128m publish
+    - sbt publish
   on:
     tags: true
     repo: akka/akka-paradox
