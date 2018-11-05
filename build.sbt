@@ -2,7 +2,9 @@ scalaVersion := "2.12.4"
 
 lazy val akkaParadox = project
   .in(file("."))
-  .enablePlugins(NoPublish)
+  .settings(
+    publish / skip := true
+  )
   .aggregate(akkaTheme, akkaPlugin)
 
 lazy val akkaTheme = project
@@ -12,8 +14,8 @@ lazy val akkaTheme = project
     organization := "com.lightbend.akka",
     name := "paradox-theme-akka",
     libraryDependencies ++= Seq(
-      Library.foundation % "provided",
-      Library.prettify % "provided"
+      "org.webjars" % "foundation" % "6.4.3" % "provided",
+      "org.webjars" % "prettify" % "4-Mar-2013-1" % "provided"
     )
   )
 
@@ -24,7 +26,9 @@ lazy val akkaPlugin = project
     organization := "com.lightbend.akka",
     name := "sbt-paradox-akka",
     bintrayRepository := "sbt-plugin-releases",
-    addSbtPlugin(Library.sbtParadox),
+    addSbtPlugin(
+      "com.lightbend.paradox" % "sbt-paradox" % "0.4.3"
+    ),
     resourceGenerators in Compile += Def.task {
       val file = (resourceManaged in Compile).value / "akka-paradox.properties"
       IO.write(file, s"akka.paradox.version=${version.value}")
