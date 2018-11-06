@@ -214,6 +214,17 @@ a:active {
 
 a.anchor .anchor-link:before {
   content: '§';
+}
+
+a.go-to-source::before {
+  content: "📄";
+}
+
+.prettyprint .icon {
+  float: right;
+}
+
+a.anchor .anchor-link, .icon {
   font-size: 1.2rem;
   font-family: "icons";
   font-style: normal;
@@ -227,6 +238,10 @@ a.anchor .anchor-link:before {
   padding-bottom: 0.3rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a.icon {
+   text-decoration: none;
 }
 
 /* adjust anchor targets for sticky header (not large size) */
