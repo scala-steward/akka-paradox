@@ -32,7 +32,7 @@ lazy val akkaPlugin = project
     scriptedBufferLog := false,
     bintrayRepository := "sbt-plugin-releases",
     addSbtPlugin(
-      "com.lightbend.paradox" % "sbt-paradox" % "0.6.4"
+      "com.lightbend.paradox" % "sbt-paradox" % "0.6.5"
     ),
     resourceGenerators in Compile += Def.task {
       val file = (resourceManaged in Compile).value / "akka-paradox.properties"
