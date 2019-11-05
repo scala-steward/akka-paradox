@@ -1007,3 +1007,35 @@ body .optanon-alert-box-wrapper .optanon-alert-box-bottom-padding {
     background: #107F9B;
     color: white
 }
+
+
+/* project/module metadata info table from sbt-paradox-project-info
+  hidden initially, link toggles, see metadata-toggle.js
+*/
+table.project-info {
+  display: none;
+}
+
+table.project-info tbody {
+  border: none;
+  border-left: 10px solid #15a9ce;
+}
+
+table.project-info tbody tr:nth-child(even) {
+  background-color: #f7f7f7 !important;
+}
+
+table.project-info th {
+  text-align: left;
+  vertical-align: top;
+  color: #0b5567;
+  font-weight: normal;
+}
+
+table.project-info td {
+  border: none;
+}
+
+a.project-info-toggle {
+  margin-bottom: 16px;
+}
