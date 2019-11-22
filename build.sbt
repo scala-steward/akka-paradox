@@ -32,7 +32,7 @@ lazy val akkaPlugin = project
     scriptedBufferLog := false,
     bintrayRepository := "sbt-plugin-releases",
     addSbtPlugin(
-      "com.lightbend.paradox" % "sbt-paradox" % "0.6.6"
+      "com.lightbend.paradox" % "sbt-paradox" % "0.6.7"
     ),
     addSbtPlugin("com.lightbend.paradox" % "sbt-paradox-apidoc" % "0.4"),
     addSbtPlugin("com.lightbend.paradox" % "sbt-paradox-project-info" % "1.1.3"),
