@@ -1,4 +1,4 @@
-addSbtPlugin("com.github.gseitz"     % "sbt-release"       % "1.0.11")
+addSbtPlugin("com.github.gseitz"     % "sbt-release"       % "1.0.12")
 addSbtPlugin("com.lightbend.paradox" % "sbt-paradox-theme" % "0.6.7")
 addSbtPlugin("com.dwijnand"          % "sbt-dynver"        % "4.0.0")
 addSbtPlugin("org.foundweekends"     % "sbt-bintray"       % "0.5.5")
