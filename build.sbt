@@ -30,8 +30,9 @@ lazy val akkaPlugin = project
       Seq("-Xmx1024M", "-Dplugin.version=" + version.value)
     },
     scriptedBufferLog := false,
-    bintrayRepository := "sbt-plugin-releases",
     addSbtPlugin(
+      // When updating the sbt-paradox version,
+      // remember to also update project/plugins.sbt
       "com.lightbend.paradox" % "sbt-paradox" % "0.9.2"
     ),
     addSbtPlugin("com.lightbend.paradox" % "sbt-paradox-apidoc" % "0.10"),

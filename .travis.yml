@@ -20,14 +20,6 @@ cache:
     - $HOME/.sbt
     - $HOME/.jabba/jdk
 
-deploy:
-  provider: script
-  script:
-    - sbt publish
-  on:
-    tags: true
-    repo: akka/akka-paradox
-
 env:
   global:
     - TRAVIS_JDK=adopt@~1.8.0-222
