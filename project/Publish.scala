@@ -6,7 +6,6 @@ import xerial.sbt.Sonatype.autoImport.sonatypeProfileName
 object Publish extends AutoPlugin {
 
   override def trigger = allRequirements
-  override def requires = JvmPlugin
 
   override def buildSettings = Seq(
     sonatypeProfileName := "com.lightbend",
