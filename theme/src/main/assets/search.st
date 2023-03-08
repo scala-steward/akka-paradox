@@ -4,6 +4,7 @@ $if(page.properties.("algolia.docsearch.api_key"))$
 <style>.algolia-autocomplete { display: block !important }</style>
 <script type="text/javascript">
   docsearch({
+    appId: '$page.properties.("algolia.docsearch.app_id")$',
     apiKey: '$page.properties.("algolia.docsearch.api_key")$',
     indexName: '$page.properties.("algolia.docsearch.index_name")$',
     inputSelector: '#search',
@@ -13,6 +14,7 @@ $if(page.properties.("algolia.docsearch.api_key"))$
   });
 
   docsearch({
+    appId: '$page.properties.("algolia.docsearch.app_id")$',
     apiKey: '$page.properties.("algolia.docsearch.api_key")$',
     indexName: '$page.properties.("algolia.docsearch.index_name")$',
     inputSelector: '#overlay-search',
